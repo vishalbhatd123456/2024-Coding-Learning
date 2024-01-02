@@ -1,0 +1,13 @@
+
+Elastic beanstalk allows us to configure the deployment is various fashions based on our needs 
+
+1) All at once deployment
+
+2) Rolling
+
+3) Trafficked
+
+4) Rolling with additional batches
+
+5) Immutable
+
