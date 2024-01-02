@@ -1,0 +1,20 @@
+AWS Services for the same - Code Commit ( Source control version enabling service for teams to collaborate on code, html pages, scripts, images and the binaries )
+
+Code build - compiles the source code, runs the tests ad produces packages that are rady to deploy.
+
+
+CodeDeploy - automates code deployments to any instances, including the ec2, lambdam and on-premises.
+
+
+CodePipeline - E22 solutions, builds, tests, and deploys the application every time there is a code change
+
+
+CI - Integrating or merging the code changes frequently, at least once per day, think of CodeCommit
+
+
+Continuos Delivery - Automating the build, test and the deployment functions, think of CodeBuild and COdeDeploy
+
+Continuous Deployment - Fully automated release processes, code is deployed into staging or production as soon as it has passed the release pipeline. THink of CodePipeline
+
+AWS Whitepaper - practicsing rhe CI CD on AWS
+

@@ -1,0 +1,5 @@
+Central repositories that manage the software updtes
+
+manags updates from multiple sources, elables the collabrations.
+
+Tracks and mannages the code changes, maintains the version history.
