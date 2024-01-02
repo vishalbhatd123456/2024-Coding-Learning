@@ -1,0 +1,48 @@
+
+ELB Allows configuration files in the form of JSON or yaml which can be a part of the source bundle - in the .ebextensions or the .config folder
+
+example:
+
+{
+    "option_settings":
+    [
+        {
+            "namespace":"aws::elasticbeanstalk:application",
+            "option_name":"My app health check URL",
+            "value":"/healthcheck"
+        }
+    ]
+}
+This configures an application health check url that will be used by a LOAD BALANCER to know if the application status is healthy
+
+Further more ELB configuration :
+
+1) buildfiles: allows to run and execute these files for a short perion and EXIT
+ upon the task completion
+
+ ==> Inculde within the root directory. 
+
+
+ proc file:
+
+ key value pair of <process_name>:<command>
+
+
+ platform hooks:
+
+ proviioned to run some processed by the ELB during some stage of the deployment process
+ stored in dedicated directory
+
+ .platform/hooks/prebuild:
+
+ files that you want ELB to run before it builds up configures the appln and web server
+
+ .platform/hooks/predeploy:
+
+ Files that you want to run after it sets up and configures the application and web server but before it deploys them into final runtime location
+
+ .platform/hooks/postdeploy:
+
+ files that run after the ELB deploys the application
+
+ this is the last deployment workflow step
