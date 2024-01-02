@@ -1,0 +1,31 @@
+SQS : Distributed Message Queuing system that allows to decouple the components of an application so that they are independent.
+
+SQS is pull based, not push based.
+
+
+SQS Queues :
+
+Stanard ; best effort ordeing, message delivered atleast once, occasional duplicates 
+
+
+FIFO ; Message orders are striclty happening,
+
+
+Visibility Timeout : When the amt of time that the message is invisible in the SQS Queue after a reader picks up that messge. default is 30s. >30s - requeuedback
+
+Short polling - A response is returned immediately even if the messages are not int he queue. this can result in lot of empty response
+
+Long polling : periodically polls th queue and only returns the response when a message is in the quue or the timeout is being increased
+
+Options of post pone deliveries, Delay periods
+
+Larger files in the queueus : s3 bucket
+
+
+SNS - Does not received the msgs - provides a pub/sub model and supports fanout, push notifications.
+
+
+Kinesis - 
+
+Streams             Firehouses               Analytics 
+Shard
