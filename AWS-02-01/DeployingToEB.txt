@@ -1,0 +1,18 @@
+
+Elastic beanstalk provisions the necessry compute services in the form of EC2 instances, auto scalings, memory and CPU utilization capabilities.
+
+Creating A New Elastic beanstalk - 
+
+1) AWS Console - Elastic beanstalk service
+2) Create beanstalk
+3) Platform (for an example PHP)
+4) The beanstalk automatically sets up the platform server in this case for a PHP it is a tomcat and for .net it is IIS
+5) Application Code - we can either upload a code or use the xisting sample Application code 
+
+WHAT HAPPENS WHEN YOU CLICK ON CREATE Application?
+
+An ec2 instance would be launched that would start configuring the load balancing, the creation on security groups, compute services
+
+It was also install the apache http server 
+
+This step approxes to around 3-5 min
