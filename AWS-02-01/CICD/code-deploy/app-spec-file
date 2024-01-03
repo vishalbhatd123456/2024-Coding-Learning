@@ -1,0 +1,17 @@
+Configuration File - Defines the parameters to be used during a codedeploy deployment
+
+it is by far mostly written in yaml 
+
+in case of the lambdas and ec2 it can be written in yaml json
+
+PARTS OF THE FILE:
+
+
+1) VERSION 
+
+
+2) OS - THE OS DEPLOYING TO 
+
+3) FILES - THE LOCATION OF ANY APPLICATION FILES THAT NEED TO BE COPIED AND WHERE THEY SHOULD BE COPIED TO 
+
+HOOKS - Scripts which need to run at set points in the deployment lifecycle. Hooks have a very specific run order.

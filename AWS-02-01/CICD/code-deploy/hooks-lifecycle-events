@@ -1,0 +1,25 @@
+deining the hooks and stages of deploying 
+
+
+RUN ORDER -> LIFECYLCLE EVENT HOOKS
+
+version: 0.0
+os: linux
+files:
+    - source: Config/config.txt
+      destination: /webapps/Config
+    - source: Source
+      destination: /webapps/myApps
+hooks:
+ BeforeInstall:
+  - location:
+  - location:
+
+ AfterInstall:
+  -location:
+  timeout:
+
+
+  3 Phases of In-Place Deployment - 
+
+  De-registering, installation , re-registering with the load-balancer.
