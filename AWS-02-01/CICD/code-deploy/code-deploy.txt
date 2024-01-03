@@ -1,0 +1,14 @@
+procides an automated deployment including ec2 instances, on-premises and lambdas.
+
+quickly relese new features, avoid mnual processes.
+
+
+1. IN-Place Deployment - The application is stopped on each instance and the new release is installed. Also known as Rolling Update.
+
+2. BLUE / GREEN Deployment - The new instances are spun up and the new release is isntalled in that particular new instance. Blue represents active deployment, GREEN represents new instance.
+ 
+ In case of the in-Place deployment, the new version that gets deployed by stopping the existing instance and then deploying the version to it. This is called as a release.
+
+ Roll backing - NOT A QUICK FIX.
+
+ Blue Green is the safest and fast to roll back
