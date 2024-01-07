@@ -1,0 +1,27 @@
+Master Node: At the top of the tree, the master node controls and manages the cluster. It's responsible for the global operations of the cluster and manages workload distribution.
+
+API Server: The communication hub for Kubernetes.
+Scheduler: Determines which node will run a container.
+Controller Manager: Oversees a number of smaller controllers that perform actions like replicating pods and handling node operations.
+etcd: A key-value store for cluster data.
+Worker Nodes: These nodes actually run the applications and workloads. Each worker node has:
+
+Kubelet: An agent that communicates with the master node.
+Kube-Proxy: Maintains network rules.
+Container Runtime: Software for running containers (like Docker).
+Pods: The smallest deployable units created and managed by Kubernetes, each containing one or more containers.
+
+
+Kubernetes provides several distributions to create a cluster. You can create a Kubernetes cluster by using any of the following distributions or you can use any distribution of your choice:
+
+Local Distributions	Cloud Distributions
+minikube	Azure
+kind	Google Cloud
+Docker Desktop	AWS
+kubeadm	Digital Ocean
+
+cd [Directory_That_Has_K8s_Environment]
+
+kind create cluster
+
+kind get clusters
